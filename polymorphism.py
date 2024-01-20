@@ -4,13 +4,14 @@ class user:
     lname = "Doe"
     email = "doe@gmail.com"
 
+    #this method welcomes back users or lets them know its incorrect
     def UserLogin(self):
         login_name = input("Enter your first name: ")
         login_email = input("Enter your email: ")
         if (login_name == self.fname and login_email == self.email):
             print("Welcome back, {}!".format(login_name))
         else:
-            print("Error: Please retype name and email")
+            print("Error: incorrect name and email")
 
 class Student(user):
     #attributes of child class "Student"
@@ -18,6 +19,7 @@ class Student(user):
     major = "Computer Science"
     student_ID = "9876"
 
+    #similar method to the userLogin but asks for student ID
     def StudentInfo(self):
         login_name = input("Enter your first name: ")
         login_ID = input("Enter your Student ID: ")
@@ -31,6 +33,7 @@ class Instructor(user):
     department = "Mathematics"
     employee_ID = "1234"
 
+    #creates a method that requires employee ID
     def InstructorInfo(self):
         login_name = input("Enter your first name: ")
         employee_ID = input("Enter your Employee ID: ")
@@ -39,6 +42,7 @@ class Instructor(user):
         else:
             print("Invaid login credentials!")
 
+#This calls the functions we created for the user, student, and instructor
 user1 = user()
 user1.UserLogin()
 
