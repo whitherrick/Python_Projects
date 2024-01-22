@@ -20,7 +20,7 @@ class Student(user):
     student_ID = "9876"
 
     #similar method to the userLogin but asks for student ID
-    def StudentInfo(self):
+    def UserLogin(self):
         login_name = input("Enter your first name: ")
         login_ID = input("Enter your Student ID: ")
         if (login_name == self.fname and login_ID == self.student_ID):
@@ -34,7 +34,7 @@ class Instructor(user):
     employee_ID = "1234"
 
     #creates a method that requires employee ID
-    def InstructorInfo(self):
+    def UserLogin(self):
         login_name = input("Enter your first name: ")
         employee_ID = input("Enter your Employee ID: ")
         if (login_name == self.fname and employee_ID == self.employee_ID):
@@ -47,7 +47,7 @@ user1 = user()
 user1.UserLogin()
 
 student1 = Student()
-student1.StudentInfo()
+student1.UserLogin()
 
 employ1 = Instructor()
-employ1.InstructorInfo()
+employ1.UserLogin()
