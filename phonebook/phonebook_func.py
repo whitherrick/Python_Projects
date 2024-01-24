@@ -208,7 +208,7 @@ def onUpdate(self):
                 if response:
                     with conn:
                         cursor = conn.cursor()
-                        cursor.execute("""UPDATE tbl_phonebook SET col_phone = '(0)',col_email = '(1)' WHERE col_fullname = '(2)'""".format(var_phone,var_email,var_value))
+                        cursor.execute("""UPDATE tbl_phonebook SET col_phone = '{0}',col_email = '{1}' WHERE col_fullname = '{2}'""".format(var_phone,var_email,var_value))
                         onClear(self)
                         conn.commit()
                 else:
