@@ -1,5 +1,5 @@
 # Python_Projects
-This repository contains the basic projects I worked on while learning Python. These projects utilize various modules such as tkinter and sqlite3.
+This repository contains the projects I worked on while learning Python. These projects utilize various modules such as tkinter and sqlite3.
 
 ## Projects
 - [Django Checkbook](https://github.com/whitherrick/Python_Projects/tree/main/Django_Checkbook_Project)
@@ -10,7 +10,7 @@ This repository contains the basic projects I worked on while learning Python. T
 
 **Django Checkbook**
 
-This project lets the user balance a checkbook. It can add and delete accounts from the database as well as make withdrawals or deposits. The user can also easily check the current balance using this checkbook.
+This project lets the user balance a checkbook. It can add and delete accounts from the database as well as make withdrawals, deposits or check the current balance.
 
 **Django University**
 
@@ -18,7 +18,7 @@ The Django university project allowed for further practice with Django and datab
 
 **Phonebook**
 
-The phonebook project keeps track of entries by saving a contacts name, email address, and phone number so it acts as a working phone book for the user.
+The phonebook project keeps track of entries by saving a contact's name, email address, and phone number so it acts as a working phone book for the user.
 
 **Nice Or Mean Game**
 
